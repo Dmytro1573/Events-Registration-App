@@ -8,7 +8,11 @@ const app = express();
 
 app.use(eventsRouter);
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "http://localhost:5173", // Дозволяє тільки localhost:5173
+  })
+);
 
 app.use("*", notFoundHandler);
 
