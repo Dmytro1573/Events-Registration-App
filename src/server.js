@@ -7,7 +7,7 @@ import "dotenv/config";
 
 const whitelist = [
   "https://water-tracker-101-team-5.vercel.app",
-  "http://127.0.0.1:5173",
+  "http://localhost:5173",
 ];
 
 const corsOptions = {
